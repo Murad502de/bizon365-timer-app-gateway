@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return 'hallo von bizon365-timer-app';
 });
+
+Route::get('/admin', function () {
+    return view('admin.index');
+});

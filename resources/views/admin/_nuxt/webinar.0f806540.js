@@ -1,0 +1,1 @@
+import{a as e,o as t,b as o}from"./entry.f75a4e35.js";const a={class:"webinar-detail-page"};function n(s,c,d,p,i,u){return t(),e("div",a,"webinar-detail-page")}const r={components:{},props:{},data(){return{}},computed:{},watch:{},methods:{},created(){console.debug("Webinar",this.$route)},mounted(){}},m=o(r,[["render",n]]);export{m as default};

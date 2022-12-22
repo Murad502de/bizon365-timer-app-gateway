@@ -1,0 +1,1 @@
+import{a as t,o as e,b as o}from"./entry.f75a4e35.js";const a={class:"gift-detail-page"};function s(n,r,d,p,i,f){return e(),t("div",a,"gift detail of webinar")}const c={components:{},props:{},data:()=>({}),computed:{},watch:{},methods:{},created(){},mounted(){}},_=o(c,[["render",s]]);export{_ as default};

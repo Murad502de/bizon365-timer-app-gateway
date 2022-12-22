@@ -1,0 +1,1 @@
+import{c as o,w as a,r as s,o as n,k as p,b as r}from"./entry.f75a4e35.js";function c(t,l,u,_,m,f){const e=s("v-app");return n(),o(e,null,{default:a(()=>[p(t.$slots,"default")]),_:3})}const d={components:{},props:{},data:()=>({}),computed:{},watch:{},methods:{},created(){},mounted(){}},$=r(d,[["render",c]]);export{$ as default};
