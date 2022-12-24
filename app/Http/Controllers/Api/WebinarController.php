@@ -19,9 +19,9 @@ class WebinarController extends Controller
     }
     public function create(WebinarCreateRequest $request)
     {
-        $webinar = Webinar::createWebinar($request->all());
+        $webinar = Webinar::create($request->all());
 
-        return $webinar ? $webinar->uuid : null;
+        return $webinar ? $webinar->uuid : null; //FIXME: put in resource
     }
     public function get(Webinar $webinar): WebinarResource
     {

@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Config;
 
 class TokenMiddleware
 {
-    public function handle(Request $request, Closure $next): mixed
+    public function handle(Request $request, Closure $next)
     {
         if ($request->bearerToken()) {
             $user = User::where('access_token', $request->bearerToken())->first();

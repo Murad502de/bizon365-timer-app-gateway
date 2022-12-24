@@ -12,12 +12,12 @@ Route::prefix('v1')->group(function () {
             Route::post('/signin', [AuthController::class, 'signin'])->withoutMiddleware('token');
         });
 
-        Route::prefix('mortgages')->group(function () {
+        Route::prefix('webinars')->group(function () {
             Route::get('/', [WebinarController::class, 'index']);
             Route::post('/', [WebinarController::class, 'create']);
-            Route::get('/{mortgage:uuid}', [WebinarController::class, 'get']);
-            Route::put('/{mortgage:uuid}/update', [WebinarController::class, 'update']);
-            Route::delete('/{mortgage:uuid}/delete', [WebinarController::class, 'delete']);
+            Route::get('/{webinar:uuid}', [WebinarController::class, 'get']);
+            Route::put('/{webinar:uuid}', [WebinarController::class, 'update']);
+            Route::delete('/{webinar:uuid}', [WebinarController::class, 'delete']);
         });
     });
 });
