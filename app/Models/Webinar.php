@@ -22,10 +22,13 @@ class Webinar extends Model
         'updated_at',
     ];
 
+    /* ENTITY RELATIONS */
     public function gifts()
     {
         return $this->hasMany(Gift::class);
     }
+
+    /* CRUD METHODS */
     public static function getByUuid(string $uuid): ?Webinar
     {
         return self::whereUuid($uuid)->first();

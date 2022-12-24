@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Resources\Webinar;
+namespace App\Http\Resources\Gift;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class WebinarsResource extends JsonResource
+class GiftsResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
