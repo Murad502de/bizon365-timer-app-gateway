@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Webinar extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'uuid',
+        'name',
+        'code',
+    ];
+    protected $hidden = [
+        'id',
+        'created_at',
+        'updated_at',
+    ];
 }

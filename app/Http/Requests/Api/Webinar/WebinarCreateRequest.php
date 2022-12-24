@@ -24,7 +24,8 @@ class WebinarCreateRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'name' => 'required',
+            'code' => 'required',
         ];
     }
 }
