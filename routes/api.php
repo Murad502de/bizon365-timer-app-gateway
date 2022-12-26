@@ -1,12 +1,20 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Api\WebinarController;
 use App\Http\Controllers\Api\GiftController;
+use App\Http\Controllers\Api\WebinarController;
+use Illuminate\Support\Facades\Route;
 
 Route::prefix('v1')->group(function () {
-    Route::prefix('embedded')->group(function () {});
+    Route::prefix('embedded')->group(function () {
+        Route::prefix('webinars')->group(function () {
+            Route::get('/{webinar:code}', [WebinarController::class, 'get']);
+        });
+
+        Route::prefix('webhooks')->group(function () {
+            Route::post('/start', [WebinarController::class, 'start']);
+        });
+    });
 
     Route::prefix('admin')->middleware('token')->group(function () {
         Route::prefix('auth')->group(function () {

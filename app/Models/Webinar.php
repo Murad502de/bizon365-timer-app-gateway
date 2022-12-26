@@ -11,6 +11,8 @@ class Webinar extends Model
     use HasFactory;
     use generateUuid;
 
+    public const EVENT_START = 'webinarStart';
+
     protected $fillable = [
         'uuid',
         'name',
@@ -19,7 +21,7 @@ class Webinar extends Model
     protected $hidden = [
         'id',
         'created_at',
-        'updated_at',
+        // 'updated_at',
     ];
 
     /* ENTITY RELATIONS */
