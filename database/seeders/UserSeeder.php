@@ -15,8 +15,8 @@ class UserSeeder extends Seeder
             'updated_at'   => Carbon::now(),
             'access_token' => 'eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ',
             'uuid'         => 'c8491983-75b4-4e1f-af2c-b194c7c71ab1',
-            'email'        => 'mister.stolica@yandex.ru',
-            'password'     => '250dbda313b9f3ea0eec8d22232b6519',
+            'email'        => '', // see accompanying documentation
+            'password'     => '', // see accompanying documentation
         ]);
     }
 }
